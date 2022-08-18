@@ -1,6 +1,6 @@
 class ConstData {
 
-    public static String URL = "boardgames.boardgame.description";
+    public static String URL = "https://boardgamegeek.com/";
     public static String XMLApi = "https://boardgamegeek.com/xmlapi/boardgame/";
     public static String descriptionXMLPath = "boardgames.boardgame.description";
     public static String nameXMLPath = "boardgames.boardgame.name";
