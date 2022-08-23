@@ -15,7 +15,7 @@ public class Requests {
 
     public String getId() {
         String currentUrl = driver.getCurrentUrl();
-        return currentUrl.replaceAll("https://boardgamegeek.com/boardgame/", "").split("/")[0];
+        return currentUrl.replaceAll("https://boardgamegeek.com/", "").split("/")[1].split("/")[0];
     }
 
     public String getResponse(String id, String XMLPath) {
