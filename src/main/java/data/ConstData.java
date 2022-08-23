@@ -1,4 +1,6 @@
-class ConstData {
+package data;
+
+public class ConstData {
 
     public static String URL = "https://boardgamegeek.com/";
     public static String XMLApi = "https://boardgamegeek.com/xmlapi/boardgame/";

@@ -1,9 +1,8 @@
-Feature: Information test
+Feature:  Language dependency
 
-  Scenario: Navigate to Game page and check information, by compering data from API And Ui
-
+  Scenario: Check language dependency level
     Given I am on the Home page
-    When I click on the menu Bar Button
+    When I click on the Menu bar button
     And I click on particular game
     And I Get information about a specific game from the site's API
     And I Parse response to get the most voted option in the Language Dependence poll

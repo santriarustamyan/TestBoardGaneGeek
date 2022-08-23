@@ -1,7 +1,10 @@
+package requests;
+
+import data.ConstData;
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.openqa.selenium.WebDriver;
 
-import static io.restassured.RestAssured.given;
 
 public class Requests {
     private WebDriver driver;
@@ -17,7 +20,7 @@ public class Requests {
 
     public String getResponse(String id, String XMLPath) {
         return
-                given().when()
+                RestAssured.given().when()
                         .get(ConstData.XMLApi + id)
                         .then()
                         .contentType(ContentType.XML)

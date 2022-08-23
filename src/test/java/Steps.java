@@ -1,3 +1,4 @@
+import data.ConstData;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -5,6 +6,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import pages.GamePage;
+import pages.HomePage;
 
 public class Steps {
 
@@ -23,7 +26,7 @@ public class Steps {
         gamePage = new GamePage(driver);
     }
 
-    @When("I click on the menu Bar Button")
+    @When("I click on the Menu bar button")
     public void clickMenuBarButton() {
         homePage.clickMenuBarButton();
     }

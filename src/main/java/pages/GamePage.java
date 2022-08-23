@@ -1,5 +1,11 @@
+package pages;
+
+import data.ConstData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import requests.Requests;
+
+
 
 public class GamePage {
     WebDriver driver;
